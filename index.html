@@ -1549,7 +1549,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/03/2021-02-03-斜优板子/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/03/2021-02-03-斜率优化dp小结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Scarecrow41">
@@ -1568,7 +1568,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2021/02/03/2021-02-03-斜优板子/" itemprop="url">斜优板子</a></h1>
+                <a class="post-title-link" href="/2021/02/03/2021-02-03-斜率优化dp小结/" itemprop="url">斜率优化dp小结</a></h1>
         
 
         <div class="post-meta">
@@ -1603,8 +1603,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/dp/" itemprop="url" rel="index">
-                    <span itemprop="name">dp</span>
+                  <a href="/categories/DP/" itemprop="url" rel="index">
+                    <span itemprop="name">DP</span>
                   </a>
                 </span>
 
@@ -1641,9 +1641,15 @@
 
       
         
-          
-            <figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">double</span> <span class="title">X</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123; <span class="keyword">return</span> ...; &#125;</div><div class="line"><span class="function"><span class="keyword">double</span> <span class="title">Y</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123; <span class="keyword">return</span> ...; &#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">double</span> <span class="title">K</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> (dp[j - <span class="number">1</span>] - dp[i - <span class="number">1</span>]) / (p[i].h - p[j].h);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="comment">/*单调队列*/</span></div><div class="line">    head = <span class="number">1</span>, tail = <span class="number">1</span>;</div><div class="line">    q[tail] = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</div><div class="line">        <span class="keyword">while</span> (head &lt; tail &amp;&amp; K() &lt;= K()) head++;</div><div class="line">        dp[i] = (<span class="keyword">double</span>)p[q[head]].h * p[i].w + dp[q[head] - <span class="number">1</span>];</div><div class="line">        <span class="keyword">while</span> (head &lt; tail &amp;&amp; K() &gt;= K()) tail--;</div><div class="line">        q[++tail] = i;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/*单调栈*/</span></div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</div><div class="line">        <span class="keyword">while</span> (q[a[i]].size() &gt;= <span class="number">2</span> &amp;&amp; K(k1, i) &gt;= K(k1, k2))</div><div class="line">	    q[a[i]].pop_back();</div><div class="line">	    q[a[i]].push_back(i);</div><div class="line">	    <span class="keyword">while</span> (q[a[i]].size() &gt;= <span class="number">2</span> &amp;&amp; Cal(i, k2) &lt;= Cal(i, k1)) q[a[i]].pop_back();</div><div class="line">	    dp[i] = Cal(i, q[a[i]].back());</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span> (<span class="string">"%lld\n"</span>, dp[n]);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-          
+          <blockquote>
+<p>斜率优化简单总结<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/02/03/2021-02-03-斜率优化dp小结/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
