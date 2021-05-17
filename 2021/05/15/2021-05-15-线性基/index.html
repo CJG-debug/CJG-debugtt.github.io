@@ -19,7 +19,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-loading-bar.min.css?v=1.0.2" rel="stylesheet">
+  <link href="/lib/pace/pace-theme-center-atom.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="位运算," />
 
 
 
@@ -86,16 +86,16 @@
 
 
 
-<meta name="description" content="Floyd123456789101112131415memset(dis, 0x3f, sizeof(dis));memset(pre, 0, sizeof(pre));pre[u][v] = u;void Floyd() &amp;#123;	for(int k = 1;k &amp;lt;= n; k++) &amp;#123;		for(int i = 1;i &amp;lt;= n; i++) &amp;#123;			for(">
+<meta name="description" content="模板">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Scarecrow41">
-<meta property="og:url" content="http://yoursite.com/2021/05/12/2020-07-29-最短路模板整理/index.html">
+<meta property="og:title" content="线性基">
+<meta property="og:url" content="http://yoursite.com/2021/05/15/2021-05-15-线性基/index.html">
 <meta property="og:site_name" content="Scarecrow41">
-<meta property="og:description" content="Floyd123456789101112131415memset(dis, 0x3f, sizeof(dis));memset(pre, 0, sizeof(pre));pre[u][v] = u;void Floyd() &amp;#123;	for(int k = 1;k &amp;lt;= n; k++) &amp;#123;		for(int i = 1;i &amp;lt;= n; i++) &amp;#123;			for(">
-<meta property="og:updated_time" content="2021-02-11T05:44:42.000Z">
+<meta property="og:description" content="模板">
+<meta property="og:updated_time" content="2021-05-17T05:37:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Scarecrow41">
-<meta name="twitter:description" content="Floyd123456789101112131415memset(dis, 0x3f, sizeof(dis));memset(pre, 0, sizeof(pre));pre[u][v] = u;void Floyd() &amp;#123;	for(int k = 1;k &amp;lt;= n; k++) &amp;#123;		for(int i = 1;i &amp;lt;= n; i++) &amp;#123;			for(">
+<meta name="twitter:title" content="线性基">
+<meta name="twitter:description" content="模板">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2021/05/12/2020-07-29-最短路模板整理/"/>
+  <link rel="canonical" href="http://yoursite.com/2021/05/15/2021-05-15-线性基/"/>
 
 
 
 
 
-  <title> | Scarecrow41</title>
+  <title>线性基 | Scarecrow41</title>
   
 
 
@@ -192,16 +192,6 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
           </a>
         </li>
       
@@ -302,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/05/12/2020-07-29-最短路模板整理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/05/15/2021-05-15-线性基/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Scarecrow41">
@@ -319,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">线性基</h1>
         
 
         <div class="post-meta">
@@ -331,8 +321,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-12T14:09:31+08:00">
-                2021-05-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-15T21:11:56+08:00">
+                2021-05-15
               </time>
             
 
@@ -353,6 +343,25 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+
+              
+            </div>
+          
 
           
 
@@ -369,8 +378,8 @@
       
 
       
-        <h3 id="Floyd"><a href="#Floyd" class="headerlink" title="Floyd"></a>Floyd</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">memset</span>(dis, <span class="number">0x3f</span>, <span class="keyword">sizeof</span>(dis));</div><div class="line"><span class="built_in">memset</span>(pre, <span class="number">0</span>, <span class="keyword">sizeof</span>(pre));</div><div class="line">pre[u][v] = u;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Floyd</span><span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">1</span>;k &lt;= n; k++) &#123;</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt;= n; i++) &#123;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>;j &lt;= n; j++) &#123;</div><div class="line">				<span class="keyword">if</span>(dis[i][j] &gt; dis[i][k] + dis[k][j]) &#123;</div><div class="line">					dis[i][j] = dis[i][k] + dis[k][j];</div><div class="line">					pre[i][j] = pre[k][j];<span class="comment">//输出路径</span></div><div class="line">				&#125;	</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
+        <p>模板<br><a id="more"></a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> int long long</span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">65</span>; </div><div class="line"><span class="keyword">const</span> <span class="keyword">int</span> BIT = <span class="number">62</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> n, base[MAXN];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span> <span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = BIT; i &gt;= <span class="number">0</span>; i--) &#123;</div><div class="line">		<span class="keyword">if</span> ((<span class="number">1l</span>l &lt;&lt; i) &amp; x) &#123;</div><div class="line">			<span class="keyword">if</span> (base[i] == <span class="number">0</span>) &#123;</div><div class="line">				base[i] = x;</div><div class="line">				<span class="keyword">break</span>;</div><div class="line">			&#125; <span class="keyword">else</span> x ^= base[i];</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">Maxval</span> <span class="params">()</span> </span>&#123;</div><div class="line">	<span class="keyword">int</span> res = <span class="number">0</span>;</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = BIT; i &gt;= <span class="number">0</span>; i--) &#123;</div><div class="line">		res = max (res, res ^ base[i]);</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">return</span> res;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">signed</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</div><div class="line">	<span class="built_in">scanf</span> (<span class="string">"%lld"</span>, &amp;n);</div><div class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>, x; i &lt;= n; i++) &#123;</div><div class="line">		<span class="built_in">scanf</span> (<span class="string">"%lld"</span>, &amp;x);</div><div class="line">		insert (x);	</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">printf</span> (<span class="string">"%lld\n"</span>, Maxval ());</div><div class="line">	<span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -382,8 +391,32 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Scarecrow41
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2021/05/15/2021-05-15-线性基/" title="线性基">http://yoursite.com/2021/05/15/2021-05-15-线性基/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/位运算/" rel="tag"># 位运算</a>
+          
+        </div>
       
 
       
@@ -394,8 +427,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/04/10/2021-04-10-Tarjan/" rel="next" title="Tarjan">
-                <i class="fa fa-chevron-left"></i> Tarjan
+              <a href="/2021/05/14/2021-05-13-平面最近点对/" rel="next" title="平面最近点对">
+                <i class="fa fa-chevron-left"></i> 平面最近点对
               </a>
             
           </div>
@@ -403,10 +436,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/05/14/2021-04-10-平面最近点对/" rel="prev" title="平面最近点对">
-                平面最近点对 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -458,17 +487,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -509,7 +529,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -538,22 +558,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Floyd"><span class="nav-number">1.</span> <span class="nav-text">Floyd</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
