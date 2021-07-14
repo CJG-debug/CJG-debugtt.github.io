@@ -88,7 +88,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Scarecrow41">
-<meta property="og:url" content="http://yoursite.com/tags/dp/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/DP/index.html">
 <meta property="og:site_name" content="Scarecrow41">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scarecrow41">
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/dp/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/DP/"/>
 
 
 
 
 
-  <title>Tag: dp | Scarecrow41</title>
+  <title>Tag: DP | Scarecrow41</title>
   
 
 
@@ -250,7 +250,7 @@
     </span>
     <div class="local-search-input-wrapper">
       <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
+             placeholder="Cerca..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
   </div>
@@ -281,7 +281,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>dp<small>Tag</small>
+        <h1>DP<small>Tag</small>
         </h1>
       </div>
 
@@ -293,37 +293,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2021/02/03/2021-02-03-斜优板子/" itemprop="url">
+            <a class="post-title-link" href="/2020/12/19/2020-12-19-数位DP学习笔记/" itemprop="url">
               
-                <span itemprop="name">斜优板子</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-02-03T00:00:00+08:00"
-              content="2021-02-03" >
-          02-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2021/02/03/2021-02-03-斜率优化dp小结/" itemprop="url">
-              
-                <span itemprop="name">斜率优化dp小结</span>
+                <span itemprop="name">数位DP学习笔记</span>
               
             </a>
         
@@ -331,37 +303,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2021-02-03T00:00:00+08:00"
-              content="2021-02-03" >
-          02-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2021/01/14/2021-1-14-状压dp小结/" itemprop="url">
-              
-                <span itemprop="name">状压dp小结</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2021-01-14T00:00:00+08:00"
-              content="2021-01-14" >
-          01-14
+              datetime="2020-12-19T00:00:00+08:00"
+              content="2020-12-19" >
+          12-19
         </time>
       </div>
 
@@ -957,6 +901,73 @@
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
       if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+
+</body>
+</html>
+
+<!-- 樱花 -->
+<script type="text/javascript" src="/js/sakura.js"></script>
+e) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
